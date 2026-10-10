@@ -476,7 +476,141 @@ body {
 
 </style>
 </head>
+<!-- MARCO | Secret Message For My Love --><section id="myLoveSection" style="
+  max-width:420px;
+  margin:30px auto;
+  padding:24px;
+  text-align:center;
+  background:linear-gradient(145deg,#170d20,#401832,#211329);
+  border:1px solid #ff83bb;
+  border-radius:24px;
+  box-shadow:0 8px 30px rgba(255,80,160,0.15);
+  color:white;
+  font-family:inherit;
+"><button
+id="myLoveButton"
+type="button"
+aria-expanded="false"
+aria-controls="myLoveMessage"
+onclick="toggleMyLoveMessage()"
+style="
+display:block;
+width:100%;
+padding:12px;
+border:0;
+background:transparent;
+color:#ffb4d6;
+cursor:pointer;
+font:inherit;
+"
 
+«»
+
+<div style="font-size:46px;">💌</div>
+
+<h2 style="
+  margin:14px 0;
+  font-size:21px;
+  color:#ffadd2;
+">
+  A Little Message For My Love ❤️
+</h2>
+
+<p id="myLoveHint" style="
+  margin:8px 0 0;
+  font-size:13px;
+  color:#f6d6e7;
+">
+  ✨ Tap to open your little surprise ✨
+</p>
+
+  </button>  <div
+    id="myLoveMessage"
+    hidden
+    style="
+      margin-top:18px;
+      padding:20px 16px;
+      border-radius:18px;
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,150,200,0.2);
+      text-align:center;
+    "
+  >
+    <div style="font-size:30px;">❤️🌙❤️</div><h3 style="
+  color:#ffadd2;
+  font-size:20px;
+  margin:14px 0;
+">
+  To My Favourite Person 💗
+</h3>
+
+<p style="
+  font-size:15px;
+  line-height:2;
+  color:#fff0f7;
+  margin:0;
+">
+  জানো, আমাদের পরিচয়টা হয়তো অনলাইন জগতে,
+  আমাদের এখনও সামনাসামনি দেখা হয়নি…
+  <br><br>
+
+  তবুও তোমার সঙ্গে কথা বলতে বলতে
+  তুমি কখন যে আমার মনের এতটা কাছের মানুষ হয়ে উঠেছ,
+  সেটা হয়তো তোমাকে বোঝাতে পারব না। 🥹❤️
+  <br><br>
+
+  তোমাকে ভালোবাসার জন্য তোমাকে প্রতিদিন
+  চোখের সামনে পাওয়াটা জরুরি নয়।
+  তোমার কথা, তোমার হাসি আর তোমার ছোট ছোট অভিমান—
+  সবকিছুই আমার কাছে ভীষণ স্পেশাল। 💕
+  <br><br>
+
+  আমার খুব ইচ্ছে, একদিন এই স্ক্রিনের দূরত্বটা
+  সত্যিকারের একটা সুন্দর মুহূর্তে বদলে যাক।
+  তোমার সামনে বসে তোমার সঙ্গে গল্প করব,
+  আর মনে মনে ভাবব—
+  অবশেষে আমার অপেক্ষার মানুষটাকে সামনে পেলাম। 🌷
+  <br><br>
+
+  <strong style="color:#ffadd2;">
+    আমি তোমাকে ভীষণ ভালোবাসি, My Love। ❤️
+  </strong>
+  <br><br>
+
+  আমাদের গল্পটা অনলাইনে শুরু হয়েছে,
+  কিন্তু আমার ইচ্ছে—আমরা দুজন মিলে
+  এর পরের সুন্দর অধ্যায়গুলোও লিখি। 💌
+</p>
+
+<div style="font-size:28px;margin-top:18px;">
+  🫶🏻💗🌹
+</div>
+
+<p style="
+  margin:12px 0 0;
+  color:#ffadd2;
+  font-size:14px;
+  font-weight:bold;
+">
+  — Yours, MARCO ❤️
+</p>
+
+  </div></section><script>
+function toggleMyLoveMessage() {
+  const message = document.getElementById("myLoveMessage");
+  const button = document.getElementById("myLoveButton");
+  const hint = document.getElementById("myLoveHint");
+
+  const willOpen = message.hidden;
+
+  message.hidden = !willOpen;
+  button.setAttribute("aria-expanded", String(willOpen));
+
+  hint.textContent = willOpen
+    ? "💗 Tap again to close 💗"
+    : "✨ Tap to open your little surprise ✨";
+}
+  </script>
 <body>
 
   <div class="profile">
